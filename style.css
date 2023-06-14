@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	background-color: rgb(227, 224, 224);
+}
+
+img {
+	max-width: 300px;
+	border-radius: 1.5rem 0rem 0rem 1.5rem;
+}
+.grid {
+	display: flex;
+	margin: 10% 10% 20% 20%;
+}
+.box2 {
+	background-color: white;
+	width: 300px;
+	max-height: 450px;
+	display: grid;
+	grid-template-rows: 60px 90px 70px 100px 75px;
+	gap: 10px;
+	border-radius: 0rem 1.5rem 1.5rem 0rem;
+}
+.perfume {
+	padding-top:10%;
+	margin-left: 7%;
+	background-color: transparent;
+	color: grey;
+	font-family: 'Kanit', sans-serif;
+}
+h1 {
+	margin-left: 7%;
+	background-color: transparent;
+	font-weight:900;
+	font-size:40px;
+}
+.graph {
+	font-family: 'Kanit', sans-serif;
+	padding-top:18%;
+	margin-left: 7%;
+	text-align:left;
+	font-size:17px;
+	font-weight: lighter;
+	background-color: transparent;
+	color: grey;
+}
+.price {
+	background-color: transparent;
+	margin-left: 7%;
+	padding-top: 27%;
+	display: flex;
+	justify-content:flex-start;
+	gap: 1cm;
+}
+h2 {
+	font-family: 'Lobster', cursive;
+	background-color: transparent;
+	color: rgb(113, 159, 113);
+	font-weight: bolder;
+}
+h3 {
+	font-family: 'Lobster', cursive;
+	background-color: transparent;
+	font-size: x-small;
+	text-decoration: line-through;
+	padding-top: 3%;
+}
+button {
+	width: 255px;
+	height: 50px;
+	margin: 7%;
+	background-color: rgb(46, 120, 100);
+	border-radius: 0.8em;
+	color: white;
+	border: none;
+}
+i {
+	background-color: rgb(46, 120, 100);
+}
+
+@media screen and (max-width: 800px) {
+	.grid {
+		display: grid;
+		margin-left: 7%;
+		grid-template-rows: 300px;
+	}
+	img {
+		width: 400px;
+		max-height: 300px;
+		border-radius: 1rem 1rem 0rem 0rem;
+    }
+	.box2 {
+		border-radius: 0rem 0rem 1rem 1rem;
+	}
+	button {
+		margin-left: 7%;
+		margin-top: 3%;
+	}
+}
